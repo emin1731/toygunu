@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #2e3035;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* NAVIGATION */
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    padding-top: 5px;
+
+
+}
+.nav__ul {
+    display: flex;
+    /* align-items: center; */
+    width: 400px;
+
+    list-style: none;
+    justify-content: space-between;
+
+    
+}
+.nav__ul li {
+    margin-left: 10px;
+}
+
+.nav__ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+
+
+}
+
+.logo {
+    /* margin: 0; */
+    color: #DB0962;
+    font-size: 26px;
+    /* margin-right: 50px; */
+    
+}
+
+
+.login {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    background: #DB0962;
+    border: 1px solid #DB0962;
+    /* box-shadow: 0 6px 10px #DB0962; */
+    transition: all 0.3s ease-in-out;
+    color: white;   
+    margin-right: 20px;
+
+}
+
+/* Hero Section */
+
+
+.hero {
+    width: 100%;
+    height: 700px;
+    /* background-color: #c2c2c2; */
+    background-size: cover;
+    /* opacity: 0.5; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/foto-pettine-IfjHaIoAoqE-unsplash.jpg);
+    /* background-image: url("img/foto-pettine-IfjHaIoAoqE-unsplash.jpg"); */
+    /* background-color: black; */
+    padding-top: 100px;
+}
+
+.hero__title {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+
+
+.finder {
+    width: 900px;
+    height: 50px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+
+
+
+
+/* Offers Section */
+
+.offers {
+    margin-top: 50px;
+
+}
+.offers__title {
+    font-size: 2rem;
+}
+
+
+
+.finder__search {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    background: #DB0962;
+    border: 1px solid #DB0962;
+    /* box-shadow: 0 6px 10px #DB0962; */
+    transition: all 0.3s ease-in-out;
+    color: white;   
+    margin-right: 20px;
+}
