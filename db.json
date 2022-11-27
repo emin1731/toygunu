@@ -1,4 +1,4 @@
-[
+
 {
     "minPrice": "111",
     "maxPrice": "",
@@ -10,7 +10,7 @@
             "imageURL": "img/offer__img1.jpg",
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
-            "volume": 70,
+            "volume": 170,
             "price": 33,
             "discount": false,
             "discountPrice": "",
@@ -61,7 +61,7 @@
             "accomodations": ""
         },
         {
-            "name": "Place 5",
+            "name": "Place 6",
             "imageURL": "img/offer__img1.jpg",
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
@@ -72,7 +72,7 @@
             "accomodations": ""
         },
         {
-            "name": "Place 1",
+            "name": "Place 7",
             "imageURL": "img/offer__img1.jpg",
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
@@ -83,7 +83,7 @@
             "accomodations": ""
         },
         {
-            "name": "Place 2",
+            "name": "Place 8",
             "imageURL": "img/offer__img2.jpg",
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
@@ -94,7 +94,7 @@
             "accomodations": ""
         },
         {
-            "name": "Place 3",
+            "name": "Place 9",
             "imageURL": "img/offer__img3.jpg",
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
@@ -105,7 +105,7 @@
             "accomodations": ""
         },
         {
-            "name": "Place 4",
+            "name": "Place 10",
             "imageURL": "img/offer__img4.jpg",
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -116,7 +116,7 @@
             "accomodations": ""
         },
         {
-            "name": "Place 5",
+            "name": "Place 11",
             "imageURL": "img/offer__img1.jpg",
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
@@ -127,16 +127,70 @@
             "accomodations": ""
         },
         {
-            "name": "Place 5",
+            "name": "Place 12",
             "imageURL": "img/offer__img1.jpg",
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
-            "volume": 500,
-            "price": 75,
+            "volume": 180,
+            "price": 60,
+            "discount": true,
+            "discountPrice": 60,
+            "accomodations": ""
+        },
+        {
+            "name": "Place 13",
+            "imageURL": "img/offer__img2.jpg",
+            "location": "Baku",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
+            "volume": 180,
+            "price": 85,
+            "discount": false,
+            "discountPrice": "",
+            "accomodations": ""
+        },
+        {
+            "name": "Place 14",
+            "imageURL": "img/offer__img3.jpg",
+            "location": "Baku",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
+            "volume": 840,
+            "price": 80,
+            "discount": false,
+            "discountPrice": "",
+            "accomodations": ""
+        },
+        {
+            "name": "Place 15",
+            "imageURL": "img/offer__img4.jpg",
+            "location": "Gence",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "volume": 610,
+            "price": 95,
+            "discount": true,
+            "discountPrice": 40,
+            "accomodations": ""
+        },
+        {
+            "name": "Place 16",
+            "imageURL": "img/offer__img1.jpg",
+            "location": "Gence",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
+            "volume": 700,
+            "price": 60,
+            "discount": true,
+            "discountPrice": 70,
+            "accomodations": ""
+        },
+        {
+            "name": "Place 17",
+            "imageURL": "img/offer__img1.jpg",
+            "location": "Gence",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
+            "volume": 120,
+            "price": 40,
             "discount": true,
             "discountPrice": 60,
             "accomodations": ""
         }
     ]
 }
-]
