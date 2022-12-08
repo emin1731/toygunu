@@ -22,7 +22,7 @@ dropdowns.forEach(item => {
 
     options.forEach(item => {
         item.addEventListener('click', (e) => {
-            selected.innerText = item.innerText;
+            // selected.innerText = item.innerText;
             select.classList.remove('select-clicked');
             caret.classList.remove('caret-rotate');
             menu.classList.remove('menu-open');
@@ -30,22 +30,15 @@ dropdowns.forEach(item => {
                 item.classList.remove('active');
             })
             item.classList.add('active')
-            // console.log(e.currentTarget.id)
-            // console.log(item.parentNode.parentNode.id)
 
             if(item.parentNode.parentNode.id === 'dropdown-price') {
-                // dropdownPrice = e.currentTarget.id
-                // localStorage.setItem('dropdownPrice', e.currentTarget.id);
                 setParams('dropdownPrice', e.currentTarget.id)
-                // console.log(localStorage.getItem('dropdownPrice'))
+                selected.innerText = localStorage.getItem('dropdownPrice');
             }
             else {
                 console.log('it is not price')
-                // localStorage.setItem('dropdownValue', e.currentTarget.id);
                 setParams('dropdownValue', e.currentTarget.id)
-                // console.log(localStorage.getItem('dropdownValue'))
-                // dropdownValue = e.currentTarget.id
-                // console.log(dropdownValue)
+                selected.innerText = localStorage.getItem('dropdownValue');
             }
 
         })
@@ -53,6 +46,19 @@ dropdowns.forEach(item => {
 
     
 })
+
+
+let searchButton = document.querySelector('.finder__search')
+if(localStorage.getItem('dropdownValue') !== 'none' && localStorage.getItem('dropdownPrice') !== 'none') {
+    searchButton.addEventListener('click', () => {
+    window.location.href = 'search.html'
+    // console.log('hi how are you')
+    // checkSearchParams()
+    // fetchData()
+    })
+
+}
+
 
 // FAQ
 
@@ -96,6 +102,7 @@ accordion.forEach(item => {
 
 let offersJSON
 
+
 const offerContainer= document.querySelector('.offer__container')
 
 fetch('db.json')
@@ -106,7 +113,6 @@ fetch('db.json')
     let count = 0
 
 
-    // OFFER SECTION
     
     for(c; c<res.offers.length; c++) {
         if(res.offers[c].discount === true) {
@@ -141,198 +147,190 @@ fetch('db.json')
 
 
 
-const searchContainer = document.querySelector('.search__offers')
+// const searchContainer = document.querySelector('.search__offers')
 
-function fetchData() {
-    fetch('db.json')
-    .then(data => data.json())
-    .then(res => {
-        // console.log(res)
-        for(i = 0; i<res.offers.length; i++) {
-            function appendCard() {
-                let offerCard = document.createElement('div')
-                offerCard.innerHTML = `    
-                    <div id="${i}" class="search__card">
-                    <div class="search__item">
-                        <div class="card__img">
-                            <img src="img/offer__img1.jpg" alt="">
-                        </div>
-                        <div class="card__center">
-                            <div class="card__title offer__title">
-                                ${res.offers[i].name}
-                            </div>
-                            <div class="card__location offer__location">
-                                ${res.offers[i].location} 
-                            </div>
-                            <div class="card__description offer__desc">
-                                ${res.offers[i].description}
-                            </div>
-                            <div class="card__value offer__desc">
-                                ${res.offers[i].volume} presons
-                            </div>
+// function fetchData() {
+//     fetch('db.json')
+//     .then(data => data.json())
+//     .then(res => {
+
+//         for(i = 0; i<res.offers.length; i++) {
+//             function appendCard() {
+//                 let offerCard = document.createElement('div')
+//                 offerCard.innerHTML = `    
+//                     <div id="${i}" class="search__card">
+//                     <div class="search__item">
+//                         <div class="card__img">
+//                             <img src="img/offer__img1.jpg" alt="">
+//                         </div>
+//                         <div class="card__center">
+//                             <div class="card__title offer__title">
+//                                 ${res.offers[i].name}
+//                             </div>
+//                             <div class="card__location offer__location">
+//                                 ${res.offers[i].location} 
+//                             </div>
+//                             <div class="card__description offer__desc">
+//                                 ${res.offers[i].description}
+//                             </div>
+//                             <div class="card__value offer__desc">
+//                                 ${res.offers[i].volume} presons
+//                             </div>
                             
-                        </div>
-                    </div>
-                    <div class="card__left">
-                        <div class="card__price">${res.offers[i].price} AZN</div>
-                        <div class="card__button" href="">See availability</div>
-                    </div>
+//                         </div>
+//                     </div>
+//                     <div class="card__left">
+//                         <div class="card__price">${res.offers[i].price} AZN</div>
+//                         <div class="card__button" href="">See availability</div>
+//                     </div>
         
-                    </div>
+//                     </div>
                     
-                    `
-                    searchContainer.append(offerCard)
+//                     `
+//                     searchContainer.append(offerCard)
     
-            }
-            function priceCondition() {
-                switch(localStorage.getItem('dropdownPrice')) {
-                    case 'price25-50':
-                        // console.log('25-50');
-                        if(res.offers[i].price >= 25 && res.offers[i].price <= 50) {
-                            appendCard()
+//             }
+//             function priceCondition() {
+//                 switch(localStorage.getItem('dropdownPrice')) {
+//                     case 'price25-50':
+
+//                         if(res.offers[i].price >= 25 && res.offers[i].price <= 50) {
+//                             appendCard()
         
-                        }
-                        break
-                    case 'price51-75':
-                        // console.log('51');
-                        if(res.offers[i].price >= 51 && res.offers[i].price <= 75) {
-                            appendCard()
+//                         }
+//                         break
+//                     case 'price51-75':
+
+//                         if(res.offers[i].price >= 51 && res.offers[i].price <= 75) {
+//                             appendCard()
         
-                        }
-                        break
-                    case 'price76-90':
-                        // console.log('76');
-                        if(res.offers[i].price >= 76 && res.offers[i].price <= 90) {
-                            appendCard()
+//                         }
+//                         break
+//                     case 'price76-90':
+
+//                         if(res.offers[i].price >= 76 && res.offers[i].price <= 90) {
+//                             appendCard()
         
-                        }
-                        break
-                    case 'price91+':
-                        // console.log('91');
-                        if(res.offers[i].price >= 91) {
-                            console.log('hhfhfhfhsjskksk')
-                            appendCard()
-                        }
-                        break
-                }
+//                         }
+//                         break
+//                     case 'price91+':
 
-            }
-            switch(localStorage.getItem('dropdownValue')) {
-                case 'value0-100':
-                    // console.log('25-50');
-                    if(res.offers[i].volume <= 100) {
-                        priceCondition()
-                    }
-                    break
-                case 'value101-150':
-                    // console.log('51');
-                    if(res.offers[i].volume >= 101 && res.offers[i].volume <= 150) {
-                        priceCondition()
-                    }
-                    break
-                case 'value151-300':
-                    // console.log('76');
-                    if(res.offers[i].volume >= 151 && res.offers[i].volume <= 300) {
-                        priceCondition()
-                    }
-                    break
-                case 'value301-600':
-                    // console.log('91');
-                    if(res.offers[i].volume >= 301 && res.offers[i].volume <= 600) {
-                        priceCondition()
-                    }
-                    break
-                case 'value601+':
-                    // console.log('value is 601');
-                    if(res.offers[i].volume >= 601) {
-                        priceCondition()
-                    }
-                    break
-            }
+//                         if(res.offers[i].price >= 91) {
+//                             console.log('hhfhfhfhsjskksk')
+//                             appendCard()
+//                         }
+//                         break
+//                 }
+
+//             }
+//             switch(localStorage.getItem('dropdownValue')) {
+//                 case 'value0-100':
+
+//                     if(res.offers[i].volume <= 100) {
+//                         priceCondition()
+//                     }
+//                     break
+//                 case 'value101-150':
+//                     if(res.offers[i].volume >= 101 && res.offers[i].volume <= 150) {
+//                         priceCondition()
+//                     }
+//                     break
+//                 case 'value151-300':
+//                     if(res.offers[i].volume >= 151 && res.offers[i].volume <= 300) {
+//                         priceCondition()
+//                     }
+//                     break
+//                 case 'value301-600':
+
+//                     if(res.offers[i].volume >= 301 && res.offers[i].volume <= 600) {
+//                         priceCondition()
+//                     }
+//                     break
+//                 case 'value601+':
+
+//                     if(res.offers[i].volume >= 601) {
+//                         priceCondition()
+//                     }
+//                     break
+//             }
 
     
-        }
-
-        let cardButtons = document.querySelectorAll('.card__button') 
-
-        cardButtons.forEach(item => {
-            item.addEventListener('click', (e)=> {
-                localStorage.setItem('selectedOfferId', e.target.parentNode.parentNode.id)
-                console.log(localStorage.getItem('selectedOfferId'))
-            })
-        })
+//         }
 
 
+//         let cardButtons = document.querySelectorAll('.card__button') 
+//         cardButtons.forEach(item => {
+//             item.addEventListener('click', (e)=> {
+//                 localStorage.setItem('selectedOfferId', e.target.parentNode.parentNode.id)
+//                 console.log(localStorage.getItem('selectedOfferId'))
+        
+                
+//                 window.location.href = offerCardHref
+//             })
+//         })
 
+//     })
 
+// }
 
-
-
-    
-    })
-
-}
+// fetchData()
 
 
 
+// // FILTER ON SEARCH PAGE
 
-fetchData()
-
-function clearContainer() {
-    searchContainer.innerHTML = ''
-}
+// let offerCardHref = 'offers/offer-page.html'
 
 
-// let json = await data.json()
-// console.log(json)
 
-// FILTER ON SEARCH PAGE
+// function clearContainer() {
+//     searchContainer.innerHTML = ''
+// }
 
 
-const filterAccordion = document.querySelectorAll('.filter__accordion')
 
-filterAccordion.forEach(item => {
-    const filterButton = item.querySelector('.filter__accordion__button')
-    const filterPanel = item.querySelector('.filter__accordion__panel')
-    filterButton.addEventListener('click', () => {
-        filterPanel.classList.toggle('filter__accordion__panel__active')
-        filterButton.classList.toggle('filter__accordion__button__active')
-        console.log('test demo')
-    })
+
+
+// const filterAccordion = document.querySelectorAll('.filter__accordion')
+
+// filterAccordion.forEach(item => {
+//     const filterButton = item.querySelector('.filter__accordion__button')
+//     const filterPanel = item.querySelector('.filter__accordion__panel')
+//     filterButton.addEventListener('click', () => {
+//         filterPanel.classList.toggle('filter__accordion__panel__active')
+//         filterButton.classList.toggle('filter__accordion__button__active')
+//         console.log('test demo')
+//     })
 
     
-    const filterOptions = item.querySelectorAll('.filter__accordion__item')
-    filterOptions.forEach(elem => {
-        elem.addEventListener('click', () => {
-            filterOptions.forEach(item => {
-                item.classList.remove('active');
-            })
-            elem.classList.add('active')
+//     const filterOptions = item.querySelectorAll('.filter__accordion__item')
+//     filterOptions.forEach(elem => {
+//         elem.addEventListener('click', () => {
+//             filterOptions.forEach(item => {
+//                 item.classList.remove('active');
+//             })
+//             elem.classList.add('active')
 
-            if(item.parentNode.id === 'filter__price') {
-                // localStorage.setItem('dropdownPrice', 'price' + elem.id);
-                setParams('dropdownPrice', elem.id)
-                // console.log(localStorage.getItem('dropdownPrice'))
-                clearContainer()
-                fetchData()
+//             if(item.parentNode.id === 'filter__price') {
+//                 setParams('dropdownPrice', elem.id)
+//                 clearContainer()
+//                 fetchData()
 
-            }
-            else if(item.parentNode.id === 'filter__value'){
-                // localStorage.setItem('dropdownValue', 'value' + elem.id);
-                setParams('dropdownValue', elem.id)
-                // console.log(localStorage.getItem('dropdownValue'))
-                clearContainer()
-                fetchData()
+//             }
+//             else if(item.parentNode.id === 'filter__value'){
+//                 setParams('dropdownValue', elem.id)
+//                 clearContainer()
+//                 fetchData()
 
-            }
+//             }
 
-            console.log(item.parentNode.id)
-            console.log(elem.id)
+//             console.log(item.parentNode.id)
+//             console.log(elem.id)
 
 
-        })
-    })
-})
+//         })
+//     })
+// })
 
 
 
@@ -345,44 +343,52 @@ function setParams(name, value) {
 
 
 let currentURL = new URL(window.location.href)
-let filterAccordionItem = document.querySelectorAll('.filter__accordion__item')
+// let filterAccordionItem = document.querySelectorAll('.filter__accordion__item')
 
 
-function checkSearchParams() {
-    const searchParams = new URLSearchParams(currentURL.search)
-    if(searchParams.has('dropdownValue')) {
-        let searchValue = searchParams.get('dropdownValue')
-        console.log(searchValue)
-        localStorage.setItem('dropdownValue', searchValue)
-        filterAccordionItem.forEach(item => {
-            if(item.id === searchValue) {
-                console.log('search params is equal to')
-                item.classList.add('filter__accordion__button__active')
-            }
-        })
-    }
-    if(searchParams.has('dropdownPrice')) {
-        console.log('price is here too')
-        let searchPrice = searchParams.get('dropdownPrice')
-        console.log(searchPrice)
-        localStorage.setItem('dropdownValue', searchPrice)
-        filterAccordionItem.forEach(item => {
-            if(item.id === searchPrice) {
-                console.log('search params is equal to')
-                item.classList.add('filter__accordion__button__active')
-            }
-        })
-    }
-    else{
-        console.log('failure') 
-    }
+// function checkSearchParams() {
+//     const searchParams = new URLSearchParams(currentURL.search)
+//     if(searchParams.has('dropdownValue') && searchParams.has('dropdownPrice')) {
+
+//         let searchPrice = searchParams.get('dropdownPrice')
+//         console.log(searchPrice)
+//         localStorage.setItem('dropdownPrice', searchPrice)
+//         filterAccordionItem.forEach(item => {
+//             if(item.id === searchPrice) {
+//                 console.log('search params is equal to')
+//                 item.classList.add('filter__accordion__button__active')
+//             }
+//         })
 
 
-    checkSearchParams()
 
-    // console.log(localStorage.getItem('dropdownValue'))
-    // console.log(localStorage.getItem('dropdownPrice'))
-}
+//         let searchValue = searchParams.get('dropdownValue')
+//         console.log(searchValue)
+//         localStorage.setItem('dropdownValue', searchValue)
+//         filterAccordionItem.forEach(item => {
+//             if(item.id === searchValue) {
+//                 console.log('search params is equal to')
+//                 item.classList.add('filter__accordion__button__active')
+//             }
+//         })
+//     }
+//     else{
+//         console.log('failure') 
+//     }
+
+
+    
+// }
+
+// checkSearchParams()
+
+
+// let mainPageBtn = document.querySelector('.nav__mainpage-btn')
+
+// mainPageBtn.addEventListener('click', () => {
+//     localStorage.setItem('dropdownValue', 'none');
+//     localStorage.setItem('dropdownPrice', 'none');
+// })
 
 
 
