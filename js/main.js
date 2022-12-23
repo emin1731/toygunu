@@ -1,3 +1,14 @@
+// BURGER MENU
+const burgerMenu = document.querySelector('.menu-icon') 
+const menuContent = document.querySelector('.burger__content')
+// burgerMenu.forEach(item => {
+    burgerMenu.addEventListener('click', ()=> {
+        burgerMenu.classList.toggle('menu__active')
+        menuContent.classList.toggle('burger__content__active')
+
+    })
+// })
+
 // DROPDOWN
 
 const dropdowns = document.querySelectorAll('.dropdown');
@@ -34,11 +45,13 @@ dropdowns.forEach(item => {
             if(item.parentNode.parentNode.id === 'dropdown-price') {
                 setParams('dropdownPrice', e.currentTarget.id)
                 selected.innerText = localStorage.getItem('dropdownPrice');
+                checkDropdowns()
             }
             else {
                 console.log('it is not price')
                 setParams('dropdownValue', e.currentTarget.id)
                 selected.innerText = localStorage.getItem('dropdownValue');
+                checkDropdowns()
             }
 
         })
@@ -47,15 +60,24 @@ dropdowns.forEach(item => {
     
 })
 
+function setParams(name, value) {
+    localStorage.setItem(name, value)
+    currentURL.searchParams.set(name, localStorage.getItem(name))
+    // window.location.href = currentURL
+
+}
+
 
 let searchButton = document.querySelector('.finder__search')
-if(localStorage.getItem('dropdownValue') !== 'none' && localStorage.getItem('dropdownPrice') !== 'none') {
-    searchButton.addEventListener('click', () => {
-    window.location.href = 'search.html'
-    // console.log('hi how are you')
-    // checkSearchParams()
-    // fetchData()
-    })
+function checkDropdowns() {
+    if(localStorage.getItem('dropdownValue') !== 'none' && localStorage.getItem('dropdownPrice') !== 'none') {
+        searchButton.addEventListener('click', () => {
+        window.location.href = 'search.html'
+        console.log('hi how are you')
+        // checkSearchParams()
+        // fetchData()
+        })
+    }
 
 }
 
@@ -334,12 +356,7 @@ fetch('db.json')
 
 
 
-function setParams(name, value) {
-    localStorage.setItem(name, value)
-    currentURL.searchParams.set(name, localStorage.getItem(name))
-    window.location.href = currentURL
 
-}
 
 
 let currentURL = new URL(window.location.href)
@@ -383,12 +400,12 @@ let currentURL = new URL(window.location.href)
 // checkSearchParams()
 
 
-// let mainPageBtn = document.querySelector('.nav__mainpage-btn')
+let mainPageBtn = document.querySelector('.nav__mainpage-btn')
 
-// mainPageBtn.addEventListener('click', () => {
-//     localStorage.setItem('dropdownValue', 'none');
-//     localStorage.setItem('dropdownPrice', 'none');
-// })
+mainPageBtn.addEventListener('click', () => {
+    localStorage.setItem('dropdownValue', 'none');
+    localStorage.setItem('dropdownPrice', 'none');
+})
 
 
 

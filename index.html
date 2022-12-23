@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="container flex">
+        <!-- <div class=" flex"> -->
             <div class="logo">
                 toygunu
             </div>
@@ -34,13 +34,47 @@
 
                 </ul>
             </div>
-            <button class="login">
-                log in
-            </button>
+            <div class="flex">
+                <button class="login">
+                    log in
+                    
+                </button>
+                <div class="nav__burger">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      
+                      <!-- <img src="icon/burger_menu.png" alt=""> -->
+                </div>
+            </div>
+            
+            
+            <!-- </div> -->
+        </header>
+        <div class="burger__content">
+            <ul class="burger__ul">
+                <li>
+                    <a class="nav__mainpage-btn" href="index.html">Main page</a>
 
+                </li>
+                <li>
+                    <a href="">Discounts</a>
+
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+
+                </li>
+                <li>
+                    <a href="">Become a partner</a>
+
+                </li>
+
+            </ul>
         </div>
-    </header>
-
+        
     <section class="hero">
         <div class="container">
             <div class="hero__title">
@@ -61,7 +95,8 @@
                         <div class="caret"></div>
                     </div>
                     <ul class="menu">
-                        <li id="price25-50" class="active">25 - 50 AZN</li>
+                        <li id="price-all" class="active">All</li>
+                        <li id="price25-50">25 - 50 AZN</li>
                         <li id="price51-75">51 - 75 AZN</li>
                         <li id="price76-90">76 - 90 AZN</li>
                         <li id="price91+">91+ AZN</li>
@@ -77,7 +112,8 @@
                         <div class="caret"></div>
                     </div>
                     <ul class="menu">
-                        <li id="value0-100" class="active">0 - 100</li>
+                        <li id="value-all" class="active">All</li>
+                        <li id="value0-100">0 - 100</li>
                         <li id="value101-150">101 - 150</li>
                         <li id="value151-300">151  - 300</li>
                         <li id="value301-600">301 - 600</li>
@@ -114,10 +150,12 @@
 
 
 
+                <div class="finder__search">
+                    <a class="">
+                        Search
+                    </a>
 
-                <a class="finder__search">
-                    Search
-                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -148,6 +186,52 @@
 
     </section>
 
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__item">
+                    <h3 class="footer__title">Site map</h3>
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="">Main Page</a>
+                        </li>
+                        <li>
+                            <a href="">Discounts</a>
+                        </li>
+                        <li>
+                            <a href="">Become a partner</a>
+                        </li>
+                        <li>
+                            <a href="">Demo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__title">Contact with us</h3>
+                    <ul class="footer__ul">
+                        <li>Adress: Azerbaijan, Baku </li>
+                        <li>Phone number: +994(55)----</li>
+                        <li>Email: demo@example.com</li>
+    
+                    </ul>    
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__company">
+                    <h4>2022 Toygunu.az</h4>
+                </div>
+                <div class="footer__social">
+    
+                </div>
+
+            </div>
+        </div>
+       
+    </section>
 
 
     <script src="js/main.js"></script>

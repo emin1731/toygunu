@@ -1,6 +1,8 @@
 
 
 
+
+
 const searchContainer = document.querySelector('.search__offers')
 
 function fetchData() {
@@ -46,6 +48,12 @@ function fetchData() {
             }
             function priceCondition() {
                 switch(localStorage.getItem('dropdownPrice')) {
+                    case 'price-all':
+
+                    // if(res.offers[i].volume <= 100) {
+                        appendCard()
+                    // }
+                    break
                     case 'price25-50':
 
                         if(res.offers[i].price >= 25 && res.offers[i].price <= 50) {
@@ -78,6 +86,12 @@ function fetchData() {
 
             }
             switch(localStorage.getItem('dropdownValue')) {
+                case 'value-all':
+
+                    // if(res.offers[i].volume <= 100) {
+                        priceCondition()
+                    // }
+                    break
                 case 'value0-100':
 
                     if(res.offers[i].volume <= 100) {

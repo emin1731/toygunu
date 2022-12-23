@@ -12,9 +12,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 170,
             "price": 33,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 2",
@@ -23,9 +40,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
             "volume": 110,
             "price": 55,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 3",
@@ -34,9 +68,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 140,
             "price": 160,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 4",
@@ -45,9 +96,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "volume": 310,
             "price": 45,
+            "oldPrice": 60,
             "discount": true,
             "discountPrice": 40,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 5",
@@ -56,9 +124,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 500,
             "price": 85,
+            "oldPrice": 100,
             "discount": true,
             "discountPrice": 70,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 6",
@@ -67,9 +152,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 500,
             "price": 75,
+            "oldPrice": 80,
             "discount": true,
             "discountPrice": 60,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 7",
@@ -78,9 +180,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 70,
             "price": 33,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 8",
@@ -89,9 +208,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
             "volume": 110,
             "price": 55,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 9",
@@ -100,9 +236,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 140,
             "price": 160,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 10",
@@ -111,9 +264,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "volume": 310,
             "price": 45,
+            "oldPrice": 70,
             "discount": true,
             "discountPrice": 40,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 11",
@@ -122,9 +292,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 500,
             "price": 85,
+            "oldPrice": 90,
             "discount": true,
             "discountPrice": 70,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 12",
@@ -133,9 +320,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 180,
             "price": 60,
+            "oldPrice": 70,
             "discount": true,
             "discountPrice": 60,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 13",
@@ -144,9 +348,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
             "volume": 180,
             "price": 85,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 14",
@@ -155,9 +376,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 840,
             "price": 80,
+            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 15",
@@ -166,9 +404,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "volume": 610,
             "price": 95,
+            "oldPrice": 130,
             "discount": true,
             "discountPrice": 40,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 16",
@@ -177,9 +432,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 700,
             "price": 60,
+            "oldPrice": 90,
             "discount": true,
             "discountPrice": 70,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         },
         {
             "name": "Place 17",
@@ -188,9 +460,26 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 120,
             "price": 40,
+            "oldPrice": 60,
             "discount": true,
             "discountPrice": 60,
-            "accomodations": ""
+            "accomodations": "",
+            "owner": {
+                "name": "Tural Mamedov",
+                "profileImg": "img/blank-profile-picture.png",
+                "phone": "+994501230000",
+                "email": "demo@example.com",
+                "website":"none",
+                "adress": "Baku Yasamal rayonu"
+
+            },
+            "features": {
+                "wifi": true,
+                "kitchen": true,
+                "service": true,
+                "area": 340
+
+            }
         }
     ]
 }
