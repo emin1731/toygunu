@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
 </head>
 <body>
     <header class="navbar">
-        <div class="container flex">
+        <!-- <div class=" flex"> -->
             <div class="logo">
                 toygunu
             </div>
             <div class="nav">
                 <ul class="nav__ul">
                     <li>
-                        <a href="index.html">Main page</a>
+                        <a class="nav__mainpage-btn" href="index.html">Main page</a>
 
                     </li>
                     <li>
@@ -24,7 +25,7 @@
 
                     </li>
                     <li>
-                        <a href="">FAQ</a>
+                        <a href="faq.html">FAQ</a>
 
                     </li>
                     <li>
@@ -34,13 +35,46 @@
 
                 </ul>
             </div>
-            <button class="login">
-                log in
-            </button>
-
-        </div>
+            <div class="flex">
+                <button class="login">
+                    log in
+                    
+                </button>
+                <div class="nav__burger">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      
+                      <!-- <img src="icon/burger_menu.png" alt=""> -->
+                </div>
+            </div>
+            
+            
+            <!-- </div> -->
     </header>
+    <div class="burger__content">
+        <ul class="burger__ul">
+            <li>
+                <a class="nav__mainpage-btn" href="index.html">Main page</a>
 
+            </li>
+            <li>
+                <a href="">Discounts</a>
+
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+
+            </li>
+            <li>
+                <a href="">Become a partner</a>
+
+            </li>
+
+        </ul>
+    </div>
 
     <section class="faq">
         <div class="container">
@@ -87,7 +121,7 @@
                     </div>
 
                     <div class="accordion">
-                        <button class="accordion__button" id="accordion_1">Text #1</button>
+                        <button class="accordion__button" id="accordion_4">Text #1</button>
                         <div class="accordion__panel">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe eos labore corrupti ex ea quas similique. Ex similique nemo impedit temporibus saepe consequuntur asperiores explicabo ipsum velit at! Maxime.
@@ -98,7 +132,7 @@
                     </div>
 
                     <div class="accordion">
-                        <button class="accordion__button" id="accordion_2">Text #1</button>
+                        <button class="accordion__button" id="accordion_5">Text #1</button>
                         <div class="accordion__panel">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe eos labore corrupti ex ea quas similique. Ex similique nemo impedit temporibus saepe consequuntur asperiores explicabo ipsum velit at! Maxime.
@@ -110,11 +144,11 @@
 
 
                 </div>
-                <div class="faq__item">
+                <!-- <div class="faq__item">
                     <div class="faq__img">
                         <img src="img/example_img1.jpg" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>

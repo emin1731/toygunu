@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toygunu</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 <body>
     <header class="navbar">
-        <div class="container flex">
+        <!-- <div class=" flex"> -->
             <div class="logo">
                 toygunu
             </div>
@@ -34,13 +35,111 @@
 
                 </ul>
             </div>
-            <button class="login">
-                log in
-            </button>
-
-        </div>
+            <div class="flex">
+                <button class="login">
+                    log in
+                    
+                </button>
+                <div class="nav__burger">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      
+                      <!-- <img src="icon/burger_menu.png" alt=""> -->
+                </div>
+            </div>
+            
+            
+            <!-- </div> -->
     </header>
 
+    <div class="burger__content">
+        <ul class="burger__ul">
+            <li>
+                <a class="nav__mainpage-btn" href="index.html">Main page</a>
+
+            </li>
+            <li>
+                <a href="">Discounts</a>
+
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+
+            </li>
+            <li>
+                <a href="">Become a partner</a>
+
+            </li>
+
+        </ul>
+    </div>
+    <div class="mobile__content__wrapper mobile__filter__content">
+        <div class="mobile__content">
+            <div class="">
+                <div class="filter__top-side flex">
+                    <div class="filter__title">
+                        Filters
+                    </div>
+                    <div class="filter__exit">
+                        <img src="icon/8666595_x_icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div id="filter__price" class="filter__price">
+                    <div class="filter__accordion">
+                        <button class="filter__accordion__button" id="accordion_1">Price</button>
+                        <div class="filter__accordion__panel">
+                            <div id="price-all" class="filter__accordion__item">
+                                All
+                            </div>
+                            <div id="price25-50" class="filter__accordion__item">
+                                25 - 50 AZN
+                            </div>
+                            <div id="price51-75" class="filter__accordion__item">
+                                51 - 75 AZN
+                            </div>
+                            <div id="price76-90" class="filter__accordion__item">
+                                76 - 90 AZN
+                            </div>
+                            <div id="price91+" class="filter__accordion__item">
+                                91+ AZN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="filter__value" class="filter__value">
+                    <div class="filter__accordion">
+                        <button class="filter__accordion__button" id="accordion_1">Value</button>
+                        <div class="filter__accordion__panel">
+                            <div id="value-all" class="filter__accordion__item">
+                                All
+                            </div>
+                            <div id="value0-100" class="filter__accordion__item">
+                                0 - 100
+                            </div>
+                            <div id="value101-150" class="filter__accordion__item">
+                                101 - 150
+                            </div>
+                            <div id="value151-300" class="filter__accordion__item">
+                                151  - 300
+                            </div>
+                            <div id="value301-600" class="filter__accordion__item">
+                                301 - 600
+                            </div>
+                            <div id="value601+" class="filter__accordion__item">
+                                601+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__date"></div>
+            </div>
+        </div>
+
+    </div>
     <section class="search__page ">
         <div class="search__filters">
             <div id="filter__price" class="filter__price">
@@ -92,35 +191,45 @@
             </div>
             <div class="filter__date"></div>
         </div>
+        <div class="mobile__search__filters">
+            <div class="search__sort__button">
+                <img src="icon/8666712_align_left_icon.svg" alt="">
+                <p>Sort by</p>
+            </div>
+            <div class="search__filters__button">
+                <img src="icon/8666771_filter_funnel_icon.svg" alt="">
+                <p>Filter</p>
+            </div>
+        </div>
         <div class="search__offers">
     
-            <!-- <div class="search__card">
-                <div class="">
+            <div id="${i}" class="search__card">
+                <div class="search__item">
                     <div class="card__img">
                         <img src="img/offer__img1.jpg" alt="">
                     </div>
                     <div class="card__center">
                         <div class="card__title offer__title">
-                            Lorem ipsum dolor sit.
+                            ${res.offers[i].name}
                         </div>
                         <div class="card__location offer__location">
-                            Baku
+                            ${res.offers[i].location} 
                         </div>
                         <div class="card__description offer__desc">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam laudantium consectetur quasi culpa eveniet.
+                            ${res.offers[i].description}
                         </div>
                         <div class="card__value offer__desc">
-                            200-300 persons
+                            ${res.offers[i].volume} presons
                         </div>
                         
                     </div>
                 </div>
                 <div class="card__left">
-                    <div class="card__price"> 100 AZN</div>
-                    <button class="card__button" href="">See availability</button>
+                    <div class="card__price">150 AZN</div>
+                    <div class="card__button" href="">See availability</div>
                 </div>
-
-            </div> -->
+    
+                </div>
 
 
         </div>

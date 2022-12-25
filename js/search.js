@@ -1,5 +1,35 @@
+const burgerMenu = document.querySelector('.menu-icon') 
+const menuContent = document.querySelector('.burger__content')
+// burgerMenu.forEach(item => {
+    burgerMenu.addEventListener('click', ()=> {
+        burgerMenu.classList.toggle('menu__active')
+        menuContent.classList.toggle('burger__content__active')
+
+    })
 
 
+const mobFilterButton = document.querySelector('.search__filters__button')
+const mobContent = document.querySelector('.mobile__filter__content')
+const mobContentExit = document.querySelector('.filter__exit')
+const mobContentWrapper = document.querySelector('.mobile__content__wrapper')
+
+
+
+mobFilterButton.addEventListener('click', () => {
+    mobContent.classList.add('display__active')
+})
+
+mobContentExit.addEventListener('click', () => {
+    mobContent.classList.remove('display__active')
+})
+
+mobContentWrapper.addEventListener('click', (e) => {
+    console.log(e.target.getAttribute('class'))
+    if(e.target.getAttribute('class') == 'mobile__content__wrapper mobile__filter__content display__active') {
+        mobContent.classList.remove('display__active')
+
+    }
+})
 
 
 

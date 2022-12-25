@@ -1,3 +1,39 @@
+// const burgerMenu = document.querySelector('.menu-icon') 
+// const menuContent = document.querySelector('.burger__content')
+
+//     burgerMenu.addEventListener('click', ()=> {
+//         burgerMenu.classList.toggle('menu__active')
+//         menuContent.classList.toggle('burger__content__active')
+
+//     })
+
+
+const mobRegButton = document.querySelector('.mobile__req__button')
+const mobRegContent = document.querySelector('.mobile__registration__content')
+const mobContentExit = document.querySelector('.filter__exit')
+const mobContentWrapper = document.querySelector('.mobile__content__wrapper')
+
+
+
+mobRegButton.addEventListener('click', () => {
+    mobRegContent.classList.add('display__active')
+})
+
+mobContentExit.addEventListener('click', () => {
+    mobRegContent.classList.remove('display__active')
+})
+
+mobContentWrapper.addEventListener('click', (e) => {
+    console.log(e.target.getAttribute('class'))
+    if(e.target.getAttribute('class') == 'mobile__content__wrapper mobile__registration__content display__active') {
+        mobRegContent.classList.remove('display__active')
+
+    }
+})
+
+
+
+
 
 let currentOfferURL = new URL(window.location.href)
 let currentOfferURLSearch = new URLSearchParams(currentOfferURL.search)
@@ -213,157 +249,11 @@ function createOfferPage(index) {
         
         
         `
-        offerPageContainer.append(offerPageContent)
+        // offerPageContainer.append(offerPageContent)
         enableSlider()
 
     })
 }
-
-{/* <section class="offerpage container">
-        <div class="offerpage__container">
-            <div class="offerpage__img__container">
-                
-                <div class="offerpage__img__main">
-                    <img src="../img/offer__img1.jpg" alt="" srcset="">
-                </div>
-                <div class="offerpage__img__item__container">
-                    <div class="offerpage__img__item">
-                        <img src="../img/offer__img2.jpg" alt="">
-                    </div>
-                    <div class="offerpage__img__item">
-                        <img src="../img/offer__img3.jpg" alt="">
-                    </div>
-                    <div class="offerpage__img__item">
-                        <img src="../img/offer__img4.jpg" alt="">
-                    </div>
-                    <div class="offerpage__img__item">
-                        <img src="../img/offer__img1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="offerpage__title">
-                    Place number one
-                </div>
-            </div>
-            <div class="offerpage__features">
-                <div class="offerpage__description__header">
-                    <div class="flex-start">
-                        <img src="../icon/8666698_star_icon.svg" alt="">
-                        <p>Features</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="offerpage__features__text">
-                        <div class="">
-                            <div class="offerpage__features__wifi offerpage__features__item">
-                                <img src="../icon/8666629_wifi_icon.svg" alt="">
-                                <p>Wifi</p>
-                            </div>
-                            <div class="offerpage__features__value offerpage__features__item">
-                                <img src="../icon/8666628_user_check_icon.svg" alt="">
-                                <p>300 - 400</p>
-                            </div>
-                            <div class="offerpage__features__area offerpage__features__item">
-                                <img src="../icon/8666718_plus_circle_icon.svg" alt="">
-                                <p>300 m2</p>
-                            </div>
-                            <div class="offerpage__features__area offerpage__features__item">
-                                <img src="../icon/8666698_star_icon.svg" alt="">
-                                <p>Food service</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="offerpage__description">
-                <div class="offerpage__description__header">
-                    <div class="flex-start">
-                        <img src="../icon/8666689_file_text_icon.svg" alt="">
-                        <p>Description</p>
-                    </div>
-                    <div class="divider"></div>
-                </div>
-                <div class="offerpage__description__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Doloribus labore, unde ab harum totam quisquam nobis,
-                      assumenda neque magnam illo, ea in? Ducimus cumque commodi,
-                       cupiditate consequuntur est ratione. Natus et amet quasi quisquam 
-                       incidunt alias voluptate in recusandae officiis sequi, doloremque 
-                       eos reiciendis possimus rerum inventore atque!
-                </div>
-
-            </div>
-            <div class="offerpage__info">
-                <div class="offerpage__description__header">
-                    <div class="flex-start">
-                        <img src="../icon/8666689_file_text_icon.svg" alt="">
-                        <p>Business Info</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="offerpage__info__container">
-                        <div class="offerpage__info__item">
-                            <div class="offerpage__info__personalinfo">
-                                <img src="../img/blank-profile-picture.png" alt="">
-                                <p>Dmitry Svetlakov</p>
-                            </div>
-                        </div>
-                        <div class="offerpage__info__item">
-                            <div class="offerpage__info__contacts">
-                                <div class="offerpage__info__contacts__item">
-                                    <img src="../icon/8666723_mail_icon.svg" alt="">
-                                    <p>demo@example.com</p>
-                                </div>
-                                <div class="offerpage__info__contacts__item">
-                                    <img src="../icon/8666632_phone_icon.svg" alt="">
-                                    <p>+994501231212</p>
-                                </div>
-                                <div class="offerpage__info__contacts__item">
-                                    <img src="../icon/8666640_map_pin_icon.svg" alt="">
-                                    <p>Baku Example St 22</p>
-                                </div>
-                                <div class="offerpage__info__contacts__item">
-                                    <img src="../icon/8666725_globe_icon.svg" alt="">
-                                    <p>www.example.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-        <div class="offerpage__sidebar">
-            <div class="offerpage__description__header">
-                <div class="flex-start">
-                    <img src="../icon/8666628_user_check_icon.svg" alt="">
-                    <p>Reservation</p>
-                </div>
-                <div class="divider"></div>
-            </div>
-            <div class="offerpage__sidebar__container">
-                <!-- <div class="offerpage__price">
-                    120 azn
-                </div> -->
-                <!-- <div class="divider"></div> -->
-                <input class="offerpage__sidebar__date offerpage__sidebar__input">
-                    
-                </input>
-                <input class="offerpage__sidebar__name offerpage__sidebar__input">
-    
-                </input>
-                <input class="offerpage__sidebar__phone offerpage__sidebar__input">
-    
-                </input>
-                <div class="offerpage__sidebar__btn">
-                    Continue 
-                </div>
-                
-            </div>
-
-        </div>
-    </section> */}
 
 
 

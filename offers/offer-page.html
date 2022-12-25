@@ -10,14 +10,14 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="container flex">
+        <!-- <div class=" flex"> -->
             <div class="logo">
                 toygunu
             </div>
             <div class="nav">
                 <ul class="nav__ul">
                     <li>
-                        <a class="nav__mainpage-btn" href="../index.html">Main page</a>
+                        <a class="nav__mainpage-btn" href="index.html">Main page</a>
 
                     </li>
                     <li>
@@ -25,7 +25,7 @@
 
                     </li>
                     <li>
-                        <a href="../faq.html">FAQ</a>
+                        <a href="faq.html">FAQ</a>
 
                     </li>
                     <li>
@@ -35,25 +35,89 @@
 
                 </ul>
             </div>
-            <button class="login">
-                log in
-            </button>
-
-        </div>
+            <div class="flex">
+                <button class="login">
+                    log in
+                    
+                </button>
+                <div class="nav__burger">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      
+                      <!-- <img src="icon/burger_menu.png" alt=""> -->
+                </div>
+            </div>
+            
+            
+            <!-- </div> -->
     </header>
+    <div class="burger__content">
+        <ul class="burger__ul">
+            <li>
+                <a class="nav__mainpage-btn" href="index.html">Main page</a>
 
+            </li>
+            <li>
+                <a href="">Discounts</a>
+
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+
+            </li>
+            <li>
+                <a href="">Become a partner</a>
+
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="mobile__content__wrapper mobile__registration__content">
+        <div class="mobile__content">
+            <div class="offerpage__description__header flex">
+                <div class="flex-start">
+                    <img src="../icon/8666628_user_check_icon.svg" alt="">
+                    <p>Reservation</p>
+                </div>
+                <div class="filter__exit">
+                    <img src="../icon/8666595_x_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="offerpage__sidebar__container">
+                
+                <input placeholder="Enter your name, surname" name="search" class="offerpage__sidebar__date offerpage__sidebar__input">
+                    
+                </input>
+                <input placeholder="Your phone number" name="search"class="offerpage__sidebar__name offerpage__sidebar__input">
+    
+                </input>
+                <input placeholder="Qeyd" name="search"class="offerpage__sidebar__phone offerpage__sidebar__input">
+    
+                </input>
+                <div class="offerpage__sidebar__btn ">
+                    Continue 
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
 
     <section class="offerpage__container">
         <div class="offerpage">
-            <!-- <div class="offerpage__main">
+            <div class="offerpage__main">
                 <div class="offerpage__img__container">
                     <div class="offerpage__title">
-                        Place number one
+                        ${res.offers[index].name} 
                     </div>
                     <div class="offerpage__infobar">
                         <div class="offerpage__infobar__location">
-
+                        ${res.offers[index].location} 
                         </div>
                         <div class="offerpage__infobar__phone">
 
@@ -80,7 +144,7 @@
                     </div>
                     <div class="offerpage__slider__item__container">
                         <div class="offerpage__slider__item">
-                            <img src="../img/offer__img1.jpg" alt="">
+                            <img src="../${res.offers[index].imageURL}" alt="">
                         </div>
                         <div class="offerpage__slider__item">
                             <img src="../img/offer__img2.jpg" alt="">
@@ -93,6 +157,11 @@
                         </div>
                     </div>
                     
+                </div>
+                <div class="mobile__registration">
+                    <div class="offerpage__sidebar__btn mobile__req__button">
+                        Make a Reservation 
+                    </div>
                 </div>
                 <div class="offerpage__features">
                     <div class="offerpage__description__header">
@@ -108,14 +177,14 @@
                                     <div class="offerpage__features__price__text">
                                         Hafta Sonu, Yemekli, Kişi Başı
                                     </div>
-                                    45 AZN
+                                    ${res.offers[index].price} AZN
                                 </div>
                                 <div class="offerpage__features__volume ">
                                     <div class="offerpage__features__volume__text">
                                         Maks. Kapasite
                                     </div>
 
-                                    <p>300 - 400 persons</p>
+                                    <p>Up to ${res.offers[index].volume} persons</p>
                                 </div>
 
                             </div>
@@ -149,12 +218,7 @@
                         <div class="divider"></div>
                     </div>
                     <div class="offerpage__description__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Doloribus labore, unde ab harum totam quisquam nobis,
-                          assumenda neque magnam illo, ea in? Ducimus cumque commodi,
-                           cupiditate consequuntur est ratione. Natus et amet quasi quisquam 
-                           incidunt alias voluptate in recusandae officiis sequi, doloremque 
-                           eos reiciendis possimus rerum inventore atque!
+                    ${res.offers[index].description}
                     </div>
     
                 </div>
@@ -223,7 +287,7 @@
                     
                 </div>
     
-            </div> -->
+            </div>
         </div>
         
     </section>

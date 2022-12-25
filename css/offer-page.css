@@ -1,3 +1,30 @@
+.mobile__content__wrapper {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(87, 87, 87, 0.5);
+    z-index: 1001;
+
+}
+
+.mobile__content {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border: #a0a0a0 solid 1px;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 30px 30px 0 0;
+    opacity: 1;
+    z-index: 1002;
+}
+.mobile__req__button {
+    display: none;
+}
+
 .offerpage {
     display: flex;
     justify-content: center;
@@ -5,7 +32,7 @@
 }
 
 .offerpage__container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -13,14 +40,13 @@
 .offerpage__main {
     /* width: 850px; */
     width: 66%;
-    height: 800px;
+    min-height: 800px;
     /* border: 1px solid #111; */
 
 }
 
 .offerpage__img__container {
-
-    margin: 0 auto;
+    
     /* margin-top: 20px; */
     /* width: 750px; */
     /* height: 450px; */
@@ -29,6 +55,8 @@
     border-radius: 20px;
     border: 1px solid #ebebeb;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    margin: 10px;
+
 
 }
 
@@ -69,7 +97,7 @@
 /* IMG SLIDER */
 .offerpage__slider {
     /* width: 100%; */
-    height: 500px;
+    max-height: 500px;
 }
 
 .slider__img__active {
@@ -86,8 +114,8 @@
 }
 
 .slider__img img {
-    /* width: 100%; */
-    height: 500px;
+    width: 100%;
+    max-height: 500px;
 
 }
 
@@ -113,7 +141,20 @@
     border-radius: 3px 0 0 3px;
 } */
 
+.mobile__registration {
 
+    margin: 0 10px;
+    height: 60px;
+    border-radius: 15px;
+    /* border: 1px solid #ebebeb; */
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile__registration .offerpage__sidebar__btn {
+    width: 100%;
+}
 
 .offerpage__sidebar {
     /* width: 300px; */
@@ -129,6 +170,7 @@
 }
 
 .offerpage__sidebar__container {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,11 +181,12 @@
 .offerpage__description {
     padding: 10px;
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
     height: 200px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
     border-radius: 15px;
     border: 1px solid #ebebeb;
+    margin: 10px;
 
 
 }
@@ -227,11 +270,12 @@
 .offerpage__features {
     padding: 10px;
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
     height: 600px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
     border-radius: 15px;
     border: 1px solid #ebebeb;
+    margin: 10px;
 }
 
 .offerpage__features__text {
@@ -292,11 +336,12 @@
 .offerpage__info {
     padding: 10px;
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
     height: 300px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
     border-radius: 15px;
     border: 1px solid #ebebeb;
+    margin: 10px;
 }
 
 
@@ -331,8 +376,9 @@
 
 .offerpage__info__contacts__item {
     display: flex;
-    height: 50px;
+    max-height: 50px;
     align-items: center;
+    white-space: nowrap;
 }
 .offerpage__info__contacts__item img {
     width: 30px;
@@ -345,3 +391,50 @@
 .offerpage__info__contacts__item p {
     line-height: 50px;
 }
+
+
+
+@media (max-width:1200px) {
+
+}
+@media (max-width:992px) {
+    .offerpage {
+        display: block;
+    }
+    .offerpage__main {
+        width: 100%;
+    }
+    .offerpage__main:nth-child(1n) {
+        /* margin: 10px; */
+    }
+    .offerpage__img__container {
+        /* width: 100%; */
+    }
+    .offerpage__title {
+        font-size: 26px;
+        margin: 0;
+    }
+    .offerpage__sidebar {
+        display: none;
+
+    }
+    .offerpage__info__contacts p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .offerpage__features__price {
+        font-size: 1.3rem;
+    }
+    .offerpage__info__personalinfo p {
+        font-size: 1.3rem;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .mobile__req__button {
+        display: block;
+    }
+}
+@media (max-width:767px) {
+    
+}
+
