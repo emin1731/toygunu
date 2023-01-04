@@ -7,15 +7,20 @@
     "offers": [
         {
             "name": "Place 1",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img2.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 170,
-            "price": 33,
-            "oldPrice": false,
+            "price": 36,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 300,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -35,15 +40,20 @@
         },
         {
             "name": "Place 2",
-            "imageURL": "img/offer__img2.jpg",
+            "imageURL": [
+                "img/offer__img1.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg",
+                "img/offer__img3.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
             "volume": 110,
             "price": 55,
-            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 300,
+            "accomodations": ["foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -63,15 +73,20 @@
         },
         {
             "name": "Place 3",
-            "imageURL": "img/offer__img3.jpg",
+            "imageURL": [
+                "img/offer__img4.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 140,
             "price": 160,
-            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 300,
+            "accomodations": ["wifi"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -91,15 +106,20 @@
         },
         {
             "name": "Place 4",
-            "imageURL": "img/offer__img4.jpg",
+            "imageURL": [
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "volume": 310,
             "price": 45,
-            "oldPrice": 60,
             "discount": true,
             "discountPrice": 40,
-            "accomodations": "",
+            "area": 250,
+            "accomodations": ["foodservice", "wifi"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -119,15 +139,20 @@
         },
         {
             "name": "Place 5",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img3.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 500,
             "price": 85,
-            "oldPrice": 100,
             "discount": true,
             "discountPrice": 70,
-            "accomodations": "",
+            "area": 400,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -147,15 +172,20 @@
         },
         {
             "name": "Place 6",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 500,
             "price": 75,
-            "oldPrice": 80,
             "discount": true,
             "discountPrice": 60,
-            "accomodations": "",
+            "area": 200,
+            "accomodations": ["foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -175,15 +205,20 @@
         },
         {
             "name": "Place 7",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img4.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img1.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 70,
             "price": 33,
-            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 300,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -203,15 +238,20 @@
         },
         {
             "name": "Place 8",
-            "imageURL": "img/offer__img2.jpg",
+            "imageURL": [
+                "img/offer__img3.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
             "volume": 110,
             "price": 55,
-            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 300,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -231,15 +271,20 @@
         },
         {
             "name": "Place 9",
-            "imageURL": "img/offer__img3.jpg",
+            "imageURL": [
+                "img/offer__img2.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 140,
             "price": 160,
-            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 100,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -259,15 +304,20 @@
         },
         {
             "name": "Place 10",
-            "imageURL": "img/offer__img4.jpg",
+            "imageURL": [
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "volume": 310,
             "price": 45,
-            "oldPrice": 70,
             "discount": true,
             "discountPrice": 40,
-            "accomodations": "",
+            "area": 300,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -287,15 +337,20 @@
         },
         {
             "name": "Place 11",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img2.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 500,
             "price": 85,
-            "oldPrice": 90,
             "discount": true,
             "discountPrice": 70,
-            "accomodations": "",
+            "area": 300,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -315,15 +370,20 @@
         },
         {
             "name": "Place 12",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img4.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 180,
             "price": 60,
-            "oldPrice": 70,
             "discount": true,
-            "discountPrice": 60,
-            "accomodations": "",
+            "discountPrice": 55,
+            "area": 270,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -343,15 +403,20 @@
         },
         {
             "name": "Place 13",
-            "imageURL": "img/offer__img2.jpg",
+            "imageURL": [
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique",
             "volume": 180,
             "price": 85,
-            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 240,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -371,15 +436,20 @@
         },
         {
             "name": "Place 14",
-            "imageURL": "img/offer__img3.jpg",
+            "imageURL": [
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Baku",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 840,
             "price": 80,
-            "oldPrice": false,
             "discount": false,
             "discountPrice": "",
-            "accomodations": "",
+            "area": 320,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -399,15 +469,20 @@
         },
         {
             "name": "Place 15",
-            "imageURL": "img/offer__img4.jpg",
+            "imageURL": [
+                "img/offer__img3.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img2.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "volume": 610,
             "price": 95,
-            "oldPrice": 130,
             "discount": true,
             "discountPrice": 40,
-            "accomodations": "",
+            "area": 310,
+            "accomodations": ["wifi"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -427,15 +502,20 @@
         },
         {
             "name": "Place 16",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img2.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img4.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 700,
             "price": 60,
-            "oldPrice": 90,
             "discount": true,
             "discountPrice": 70,
-            "accomodations": "",
+            "area": 330,
+            "accomodations": ["wifi", "foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",
@@ -455,15 +535,20 @@
         },
         {
             "name": "Place 17",
-            "imageURL": "img/offer__img1.jpg",
+            "imageURL": [
+                "img/offer__img4.jpg",
+                "img/offer__img1.jpg",
+                "img/offer__img3.jpg",
+                "img/offer__img2.jpg"
+            ],
             "location": "Gence",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at itaque!",
             "volume": 120,
             "price": 40,
-            "oldPrice": 60,
             "discount": true,
             "discountPrice": 60,
-            "accomodations": "",
+            "area": 360,
+            "accomodations": ["foodservice"],
             "owner": {
                 "name": "Tural Mamedov",
                 "profileImg": "img/blank-profile-picture.png",

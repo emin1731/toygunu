@@ -17,11 +17,11 @@
             <div class="nav">
                 <ul class="nav__ul">
                     <li>
-                        <a class="nav__mainpage-btn" href="index.html">Main page</a>
+                        <a class="nav__mainpage-btn" href="../index.html">Main page</a>
 
                     </li>
                     <li>
-                        <a href="">Discounts</a>
+                        <a class="nav__discounts-btn" href="">Discounts</a>
 
                     </li>
                     <li>
@@ -57,7 +57,7 @@
     <div class="burger__content">
         <ul class="burger__ul">
             <li>
-                <a class="nav__mainpage-btn" href="index.html">Main page</a>
+                <a class="nav__mainpage-btn" href="../index.html">Main page</a>
 
             </li>
             <li>
@@ -125,24 +125,29 @@
 
                     </div>
                     <div class="offerpage__slider">
-                        <div class="slider__img slider__img__active">
+                        
+                        <!-- <div class="slider__img slider__img__active">
                             <img src="../img/offer__img1.jpg" alt="" srcset="">
                         </div>
                         <div class="slider__img">
                             <img src="../img/offer__img2.jpg" alt="">
-
                         </div>
                         <div class="slider__img">
                             <img src="../img/offer__img3.jpg" alt="">
                         </div>
                         <div class="slider__img">
                             <img src="../img/offer__img4.jpg" alt="">
-                        </div>
+                        </div> -->
                         
+                        <!-- <div class="slider__btn__right"></div> -->
+                        <a class="slider__btn__left">❮</a>
+                        <a class="slider__btn__right">❯</a>
+
+                        <!-- <div class="slider__btn__left"></div> -->
                     </div>
-                    <div class="offerpage__img__main">
-                    </div>
-                    <div class="offerpage__slider__item__container">
+                    <!-- <div class="offerpage__img__main">
+                    </div> -->
+                    <!-- <div class="offerpage__slider__item__container">
                         <div class="offerpage__slider__item">
                             <img src="../${res.offers[index].imageURL}" alt="">
                         </div>
@@ -155,11 +160,11 @@
                         <div class="offerpage__slider__item">
                             <img src="../img/offer__img4.jpg" alt="">
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <div class="mobile__registration">
-                    <div class="offerpage__sidebar__btn mobile__req__button">
+                    <div class="mobile__req__button">
                         Make a Reservation 
                     </div>
                 </div>
@@ -177,31 +182,40 @@
                                     <div class="offerpage__features__price__text">
                                         Hafta Sonu, Yemekli, Kişi Başı
                                     </div>
-                                    ${res.offers[index].price} AZN
+                                    <div class="offerpage__features__price__title">
+                                        ${res.offers[index].price} AZN
+                                    </div>
                                 </div>
                                 <div class="offerpage__features__volume ">
                                     <div class="offerpage__features__volume__text">
                                         Maks. Kapasite
                                     </div>
+                                    <div class="offerpage__features__volume__title">
+                                        Up to ${res.offers[index].volume} persons
 
-                                    <p>Up to ${res.offers[index].volume} persons</p>
+                                    </div>
                                 </div>
 
                             </div>
                             <div class="divider"></div>
 
+                            <div class="offerpage__features__area offerpage__features__item">
+                                <img src="../icon/8666718_plus_circle_icon.svg" alt="">
+                                <div class="offerpage__features__area__title">
+                                    300 m2
+                                </div>
+                            </div>
+                            <div class="offerpage__features__container">
                                 <div class="offerpage__features__wifi offerpage__features__item">
                                     <img src="../icon/8666629_wifi_icon.svg" alt="">
                                     <p>Wifi</p>
                                 </div>
                                 <div class="offerpage__features__area offerpage__features__item">
-                                    <img src="../icon/8666718_plus_circle_icon.svg" alt="">
-                                    <p>300 m2</p>
-                                </div>
-                                <div class="offerpage__features__area offerpage__features__item">
                                     <img src="../icon/8666698_star_icon.svg" alt="">
                                     <p>Food service</p>
                                 </div>
+
+                            </div>
     
 
                         </div>
@@ -232,26 +246,34 @@
                         <div class="offerpage__info__container">
                             <div class="offerpage__info__item">
                                 <div class="offerpage__info__personalinfo">
-                                    <img src="../img/blank-profile-picture.png" alt="">
-                                    <p>Dmitry Svetlakov</p>
+                                    <div class="owner__img">
+                                        <img src="../img/blank-profile-picture.png" alt="">
+                                    </div>
+                                    <div class="owner__name">
+                                        <p>Dmitry Svetlakov</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="offerpage__info__item">
                                 <div class="offerpage__info__contacts">
                                     <div class="offerpage__info__contacts__item">
                                         <img src="../icon/8666723_mail_icon.svg" alt="">
+                                        <div class="owner__email"></div>
                                         <p>demo@example.com</p>
                                     </div>
                                     <div class="offerpage__info__contacts__item">
                                         <img src="../icon/8666632_phone_icon.svg" alt="">
+                                        <div class="owner__mobile"></div>
                                         <p>+994501231212</p>
                                     </div>
                                     <div class="offerpage__info__contacts__item">
                                         <img src="../icon/8666640_map_pin_icon.svg" alt="">
+                                        <div class="owner__adress"></div>
                                         <p>Baku Example St 22</p>
                                     </div>
                                     <div class="offerpage__info__contacts__item">
                                         <img src="../icon/8666725_globe_icon.svg" alt="">
+                                        <div class="owner__site"></div>
                                         <p>www.example.com</p>
                                     </div>
                                 </div>
@@ -291,7 +313,7 @@
         </div>
         
     </section>
-    <!-- <section class="footer">
+    <section class="footer">
         <div class="container">
             <div class="footer__main">
                 <div class="footer__item">
@@ -335,10 +357,10 @@
             </div>
         </div>
        
-    </section> -->
+    </section>
 
     <script src="../js/offer-card.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/search.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+    <!-- <script src="../js/search.js"></script> -->
 </body>
 </html>

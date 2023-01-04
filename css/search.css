@@ -14,13 +14,33 @@
 .search__filters {
     width: 250px;
     /* background-color: #ebebeb; */
-    border: #a0a0a0 solid 1px;
+    /* border: #a0a0a0 solid 1px; */
     border-radius: 15px;
-    padding-top: 20px;
-    height: 500px;
+    padding: 25px 0;
+    min-height: 500px;
     margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 
 
+
+}
+.filter__title {
+    width: 100%;
+    height: 30px;
+    padding: 0 20px;
+}
+.filter__discount {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    padding-left: 18px;
+    font-size: 15px;
+    color: #444;
+    margin-top: 20px;
+    cursor: pointer;
+    
 }
 .mobile__search__filters {
     display: none;
@@ -77,10 +97,13 @@
     height: 50px;
     display: flex;
     align-items: center;
-    border: #a0a0a0 solid 1px;
+    /* border: #a0a0a0 solid 1px; */
     border-radius: 15px;
     font-size: 16px;
     padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+
+    
 }
 .search__sort__button p, .search__filters__button p{
     margin-left: 8px;
@@ -105,14 +128,16 @@
 .search__card {
     /* width: 95%; */
     margin: 10px;
-    border: #a0a0a0 solid 1px;
+    /* border: #c1c1c1 solid 1px; */
     height: 230px;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 
 
     display: flex;
     /* align-items: center; */
     padding: 10px;
+    padding-bottom: 20px;
     justify-content: space-between;
     margin-bottom: 25px;
 }
@@ -149,9 +174,16 @@
 
 } */
 .card__price {
-margin-bottom: 10px;
-text-align: end;
-font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: end;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.card__discount {
+    color: #ae0850;
+    margin-left: 10px;
 }
 
 .card__button {
@@ -194,20 +226,21 @@ font-size: 20px;
     background-color: #fff;
     color: #444;
     cursor: pointer;
-    padding: 14px;
+    padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .filter__accordion__item {
-    color: #444;
+    color: rgb(23, 23, 23);
     cursor: pointer;
     padding: 10px;
+    padding: 7px 25px;
     width: 100%;
     border: none;
     text-align: left;
@@ -215,7 +248,16 @@ font-size: 20px;
     font-size: 15px;
     transition: 0.4s;
     padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+.filter__accordion__select img{
+    width: 20px;
+}
+
 .filter__accordion__panel {
     /* padding: 0 18px; */
     display: none;
@@ -245,7 +287,7 @@ font-size: 20px;
         display: block;
         /* width: 100%; */
         height: 240px;
-        margin: 0;
+        /* margin: 0; */
     }
     .card__img img {
         width: 150px;
